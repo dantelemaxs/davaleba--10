@@ -1,0 +1,296 @@
+@font-face{
+font-family: 'zombebi';
+src: url(Dead\ Kansas.ttf)
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(img/background.jpg);
+}
+.container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.head {
+    position: relative;
+    background: gray;
+    width: 200px;
+    height: 250px;
+    border-radius: 40%;
+    box-shadow: 9px 3px 0 0 rgba(34, 29, 29, 0.7);
+    overflow: hidden;
+}
+
+.head .blood {
+    background: red;
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    border-radius: 40px;
+    transform: rotate(-40deg);
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, .2);
+}
+
+.blood::before,
+.blood::after {
+    content: "";
+    background: red;
+    width: 10px;
+    height: 60px;
+    position: absolute;
+    border-radius: 40px;
+    transform: rotate(45deg);
+    animation: blood 2s linear infinite;
+}
+
+.blood::after {
+    left: 30px;
+}
+.shubli {
+    background: #3a1010d0;
+    width: 100px;
+    height: 4px;
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    border-radius: 90%;
+}
+.eye {
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 0 0 rgba(0, 0, 0, .2);
+    animation: eyes 2s cubic-bezier(0.28, 0.18, 0, 1.15) infinite alternate;
+}
+.eye:nth-of-type(1) {
+    top: 100px;
+    left: 35px;
+} 
+.eye:nth-of-type(2) {
+    top: 100px;
+    right: 35px;
+} 
+.eye .pupil {
+    background: #000;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+.eye .pupil-1{
+    background: #000000;
+    width: 9px;
+    height: 9px;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.eye .pupil-2{
+    background: #000;
+    width: 9px;
+    height: 9px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.nose {
+    background: #6e6e6e;
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    top: 160px;
+    left: 80px;
+    border-radius: 30px;
+    box-shadow: .5px .5px 0 0 rgba(0, 0, 0, .5);
+}
+.mouth {
+    background: #6e6e6e;
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    top: 210px;
+    left: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    animation: mouth 2s cubic-bezier(0.8,-0.66, 0.38, 1.49) infinite alternate;
+}
+.teeth {
+    background: #cfeb82;
+    border: 0.1px solid gray;
+    width: 15px;
+    height: 20px;
+}
+.header1{
+    font-family: 'zombebi';
+font-size: 82px;
+text-align: center;
+}
+.header2{
+    max-width: 40ch;
+    text-align: center;
+    font-family: 'zombebi';
+    font-size: 40px;
+    transform: scale(0.94);
+    animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    margin-left: 380px;
+  }
+  span {
+    display: inline-block;
+    opacity: 0;
+  }
+  span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  span:nth-child(4) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  span:nth-child(5) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  span:nth-child(6) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  span:nth-child(7) {
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  span:nth-child(8) {
+    animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  span:nth-child(9) {
+    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  span:nth-child(10) {
+    animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  .daachire  {
+    color: #333;
+    font-family: tahoma;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 550px;
+    margin-top: 450px;
+    margin-left: 550px;
+  } 
+  .daachire span {
+    font-family: 'zombebi';
+    font-size: 40px;
+    color: #000;
+  }
+  .options {
+    background-color: rgb(63, 63, 13);
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 3px;
+    padding-top: 4px;
+    top: 42px;
+    left: 340px;
+    animation: openclose 6s ease-in-out infinite;
+  }
+  .click1, .click2, .click3, .click4{
+    font-family: 'zombebi';
+    font-size: 45px;
+    font-weight: 500;
+    color: rgb(3, 3, 3);
+}
+@keyframes fade-in {
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blood {
+    100% {transform: scale(1.6) rotate(45deg);}
+}
+@keyframes mouth {
+   50% {transform: scaleY(.5)}
+    100% {transform: scaleY(1)}
+}
+@keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 230px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 230px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+      width: 0;
+    }
+    48% {
+      top: -4.5rem;
+      width:390px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 390px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+    }
+    86% {
+      top: -9rem;
+      width: 390px;
+    }
+    95% {
+      top: -9rem;
+      width: 390px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+    }
+  }
